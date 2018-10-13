@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+.spacing {
+  height: 200;
+}
+
+.Paragraph {
+  font-size: 30px;
+  font-style: italic;
+  color: white;
+  font-weight: bold;
+}
