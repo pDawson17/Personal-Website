@@ -3,11 +3,12 @@ import backImage from "./headerbg.jpg";
 import Component from "react-background-video-player";
 import BackgroundVid from "../Images/BackgroundVid.mp4";
 import Bubbles from "../Images/bubbles.mp4";
+import Sunset from "../Images/Sunset.mp4";
 import "./s.css";
 const Header = ({ title, slogan }) => {
   return (
     <div className="Header" style={styles.headerStyle}>
-      <Component src={BackgroundVid} autoPlay={true} containerHeight={500} />
+      <Component src={Sunset} autoPlay={true} containerHeight={500} />
       <nav
         style={{
           position: "absolute",
@@ -27,7 +28,7 @@ const Header = ({ title, slogan }) => {
 const styles = {
   headerStyle: {
     backgroundColor: "#262a2c",
-    height: 800
+    height: 920
     //  backgroundImage: `url(${backImage})`,
     //justifyContent: "center"
   }

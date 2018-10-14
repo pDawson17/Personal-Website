@@ -2,13 +2,16 @@
   text-align: center;
 }
 
-.spacing {
-  height: 200;
-}
-
 .Paragraph {
   font-size: 30px;
-  font-style: italic;
+  font-style: trebuchet;
   color: white;
   font-weight: bold;
+}
+
+.TitleText {
+  font-size: 50px;
+  color: black;
+  align-self: flex-start;
+  padding-left: 30px;
 }
