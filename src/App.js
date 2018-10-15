@@ -4,6 +4,8 @@ import Container from "./Components/Container";
 import ContainedItem from "./Components/ContainedItem";
 import GenericButton from "./Components/GenericButton";
 import DropDownContainer from "./Components/DropDownContainer";
+import { FaCode } from "react-icons/fa";
+import { Transition } from "react-transition-group";
 import Footer from "./Components/Footer";
 import me1 from "./Images/me1.jpg";
 import zion from "./Images/zion.JPG";
@@ -52,48 +54,73 @@ class App extends Component {
             <img src={zion} height={400} width={600} style={imageStyle} />
           </ContainedItem>
         </Container>
-        <div style={{ height: 100 }} />
-        <Container>
-          <ContainedItem>
-            <p className="Paragraph">Full-Stack Mobile Development</p>
-          </ContainedItem>
-        </Container>
-        <div style={{ height: 100 }} />
+        <div style={{ height: 120, alignItems: "center", marginBottom: 30 }}>
+          <p className="TitleText">Full Stack Mobile Development</p>
+        </div>
         <Container>
           <ContainedItem>
             <p className="Paragraph">BudgetingApp</p>
             <img src={budgeting} height={600} width={340} style={imageStyle} />
+            <a href="https://github.com/pDawson17/BudgetingApp">
+              <FaCode size={60} color={"white"} style={{ paddingBottom: 30 }} />
+            </a>
           </ContainedItem>
           <ContainedItem>
             <p className="Paragraph">Jazz Helper</p>
             <img src={modes} height={600} width={340} style={imageStyle} />
+            <a href="https://github.com/pDawson17/JazzHelper">
+              <FaCode size={60} color={"white"} style={{ paddingBottom: 30 }} />
+            </a>
           </ContainedItem>
           <ContainedItem>
             <p className="Paragraph">Checklist</p>
             <img src={checklist} height={600} width={340} style={imageStyle} />
+            <a href="https://github.com/pDawson17/Checklist">
+              <FaCode size={60} color={"white"} style={{ paddingBottom: 30 }} />
+            </a>
           </ContainedItem>
         </Container>
-        <div style={{ height: 100, backgroundColor: "white" }} />
+        <div style={{ height: 120, alignItems: "center" }}>
+          <p className="TitleText">Skills and Coursework</p>
+        </div>
         <Container>
           <ContainedItem>
-            <p className="Paragraph">Education and Coursework</p>
+            <p className="Paragraph">
+              ReactJS <br />
+              React Native <br />
+              C++ <br />
+              Python <br />
+              Javascript <br />
+            </p>
           </ContainedItem>
           <ContainedItem>
             <p className="Paragraph">
               Object Oriented Programming <br />
               Data Structures <br />
-              Discrete Math
+              Discrete Math <br />
+              Logic Design <br />
             </p>
           </ContainedItem>
         </Container>
-        <Footer label={"Lets stay in touch!"} />
+        <Footer
+          label={"Lets stay in touch!"}
+          bottomLabel={"Feel free to contact me at pDawson@scu.edu"}
+        />
       </div>
     );
   }
 }
-
+const buttonStyle = {
+  width: 100,
+  height: 40,
+  marginBottom: 20,
+  backgroundColor: "#ffd27f",
+  alignSelf: "center",
+  borderRadius: 20,
+  justifyContent: "center",
+  alignItems: "center"
+};
 const imageStyle = {
-  //borderRadius: 80,
   alignSelf: "center",
   paddingBottom: 20,
   paddingTop: 20

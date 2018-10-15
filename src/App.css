@@ -7,11 +7,13 @@
   font-style: trebuchet;
   color: white;
   font-weight: bold;
+  align-self: center;
 }
 
 .TitleText {
-  font-size: 50px;
+  font-size: 80px;
   color: black;
+  font-weight: bold;
   align-self: flex-start;
   padding-left: 30px;
 }
